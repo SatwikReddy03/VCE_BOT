@@ -6,8 +6,7 @@ RUN chmod 777 /usr/src/app
 
 RUN apt-get -qq install -y locales python3 python3-pip \
 
-COPY requirements.txt
-     login_data.csv
+COPY requirements.txt .
 RUN pip3 install --no-cache-dir -r requirements.txt
 
 COPY . .
