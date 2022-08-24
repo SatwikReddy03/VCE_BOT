@@ -13,7 +13,7 @@ jobs:
           heroku_email: ${{secrets.HEROKU_EMAIL}}
           heroku_app_name: ${{secrets.HEROKU_APP_NAME}}
           usedocker: true
-          docker_heroku_process_type: worker
+          docker_heroku_process_type: web
           stack: "container"
-          region: "eu"
+          region: "us"
         
